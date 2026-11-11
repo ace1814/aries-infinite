@@ -1,0 +1,41 @@
+/* Approximate tokens sampled from the 20 Oct 2026 Aries Infinite recording (PRD §2.2).
+   Re-sample from /reference/frames and adjust here only. */
+:root {
+  --bg-canvas: #030205;
+  --bg-panel: #111119;
+  --bg-panel-2: #0f1015;
+  --bg-raised: #171821;
+  --bg-hover: #1d1f2a;
+  --line: #23252f;
+  --line-2: #2e313d;
+  --fg: #e9ebf0;
+  --fg-2: #b6bac6;
+  --muted: #7d8291;
+  --accent: #18a453;
+  --accent-bright: #18bc65;
+  --accent-glow: #29e881;
+  --negative: #cf394a;
+  --warn: #e0b341;
+  --idle-border: #3a4a40; /* muted slate-green dashed idle border (PRD §2.3) */
+  --buy-tint: color-mix(in srgb, var(--accent-bright) 12%, var(--bg-panel));
+  --sell-tint: color-mix(in srgb, var(--negative) 14%, var(--bg-panel));
+  --r-pill: 14px;
+  --r-widget: 12px;
+  --r-sm: 8px;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  color-scheme: dark;
+}
+
+/* tldraw overrides: dark canvas, faint dot grid, green selection. */
+.tl-theme__dark,
+.tl-container {
+  --color-background: var(--bg-canvas);
+  --color-grid: #2a2d36;
+  --color-selection-stroke: var(--accent-bright);
+  --color-selection-fill: rgba(24, 188, 101, 0.06);
+  --color-selected: var(--accent-bright);
+  --color-focus: var(--accent-bright);
+  --color-text: var(--fg);
+}
